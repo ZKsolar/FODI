@@ -1256,7 +1256,18 @@
         });
     </script>
 </head>
-
+<head>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+</head>
+<body>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: 'XSFb3hngAjjtBFForkTEn1WI-9Nh9j0Va',
+            appKey: 'lYrVxGWPTUJVVs9z9dYAlcAU'
+        })
+    </script>
+</body>
 <body hidden="hidden">
     <template id="tree-node-wrapper-template">
         <div class="tree-node-wrapper">
@@ -1312,6 +1323,10 @@
                 </div>
                 <div class="markdown-body">
                     <div id="readme">
+                    </div>
+                <div class="markdown-body">
+                    <div id="readme">
+                        <div id="vcomments"></div>
                     </div>
                 </div>
                 <div class="preview">
